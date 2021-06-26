@@ -1,0 +1,39 @@
+{
+  "name": "csv2json",
+  "version": "0.1.0",
+  "description": "Convert a CSV string to JSON",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist && tsc ./src && rollup --config rollup.config.ts --configPlugin typescript"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/limistah/csv2json.git"
+  },
+  "keywords": [
+    "csv",
+    "json",
+    "csvtojson",
+    "csv2json"
+  ],
+  "author": "Aleem Isiaka <aleemisiaka@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/limistah/csv2json/issues"
+  },
+  "homepage": "https://github.com/limistah/csv2json#readme",
+  "dependencies": {
+    "deepmerge": "^4.2.2",
+    "global": "^4.4.0",
+    "rollup": "^2.52.3",
+    "tsc": "^2.0.3"
+  },
+  "devDependencies": {
+    "@open-wc/building-rollup": "^1.10.0",
+    "@rollup/plugin-typescript": "^8.2.1",
+    "rimraf": "^3.0.2",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.4"
+  }
+}
